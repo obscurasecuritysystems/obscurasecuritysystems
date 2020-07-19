@@ -1,6 +1,6 @@
 // JavaScript Document
 var count = 1;
-var projectImagesArrayCCTV = ["Images/services/schools.jpg","Images/services/schools.jpg","Images/services/schools.jpg","Images/services/schools.jpg","Images/services/schools.jpg","Images/services/schools.jpg"];
+var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuy.jpg","Images/services/cctv.jpg"];
 var projectImagesArrayAll = ["Images/services/livein.jpg","Images/services/GRANDMALL.jpg","Images/services/EasyBuy.jpg","Images/services/livein.jpg","Images/services/GRANDMALL.jpg","Images/services/EasyBuy.jpg"];
 var projectImagesArrayINCOM = ["Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg"];
 var projectImagesArrayNETW = ["Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg","Images/services/livein.jpg","Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg"];
@@ -85,6 +85,19 @@ if($(".serviceDivHover").length > 0)
 $(".owl-stage").css("width","100%");
 $(".owl-item").css("width","100%");
 }
+var clickCountS = 0;
+$(window).click(function(){
+clickCountS = clickCountS +1;
+WriteFiles();
+if(clickCountS % 2!=0)
+{
+$(".test").find("img").attr("src","Images/services/table-lamp-no-overhead-light.jpeg");				 
+}
+else
+{
+	$(".test").find("img").attr("src","Images/services/table-lamp-no-onolight.jpeg");
+}
+});
 
 $(".down").click(function(){
 clickCount = clickCount + 1;
@@ -181,4 +194,30 @@ function selectedProjects(projectType)
 		}
 		
 	}
+}
+
+function WriteToFile() {
+	alert("test");
+	switch (document.location.hostname)
+	{
+        case 'asite.com':
+                          var rootFolder = '/devbuild/'; break;
+        case 'localhost' :
+                          var rootFolder = '/mytestSiteA/'; break;
+        default :  // set whatever you want
+	}
+	alert(rootFolder);
+	const fs = require('fs');
+    fs.writeFile("../Images/test.txt", "hello test");
+    //set fso = CreateObject("Scripting.FileSystemObject");  
+    //set s = fso.CreateTextFile("D:\test.txt", True);
+    //s.writeline("HI");
+    //s.writeline("Bye");
+    //s.writeline("-----------------------------");
+    //s.Close();
+ }
+ 
+function WriteFiles()
+{
+
 }

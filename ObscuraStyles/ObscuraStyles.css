@@ -791,7 +791,7 @@ textarea.form-control {
 .contactForm .form-control {
   height: 36px;
   background:#6660;
-  color: #fff;
+  color: #E6680B;
   font-size: 14px;
   border-radius: 2px;
   -webkit-box-shadow: none !important;
@@ -915,4 +915,14 @@ background-repeat:no-repeat;
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 	
+	.carosalImageGallery
+	{
+	background-image:url(../Images/services/table-lamp-no-onolight.jpeg);
+	background-repeat:no-repeat;
+	}
 	
+	.carosalImageGallery2
+	{
+	background-image:url(../Images/services/table-lamp-no-overhead-light.jpeg);
+	background-repeat:no-repeat;
+	}
