@@ -1,9 +1,9 @@
 // JavaScript Document
 $(document).ready(function(){
-$(".map").mouseover(function(){$(this).addClass("mousehored");});
-$(".map").mouseout(function(){$(this).removeClass("mousehored");});
-$(".map").mousemove(function(){
-if($(".map").hasClass("mousehored")){
+$(".serviceItem").mouseover(function(){$(this).addClass("mousehored");});
+$(".serviceItem").mouseout(function(){$(this).removeClass("mousehored");});
+$(".serviceItem").mousemove(function(){
+if($(".serviceItem").hasClass("mousehored")){
 mouseMoved(event);
 }
 else

@@ -1,9 +1,9 @@
 // JavaScript Document
 var count = 1;
-var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuy.jpg","Images/services/cctv.jpg"];
-var projectImagesArrayAll = ["Images/services/livein.jpg","Images/services/GRANDMALL.jpg","Images/services/EasyBuy.jpg","Images/services/livein.jpg","Images/services/GRANDMALL.jpg","Images/services/EasyBuy.jpg"];
-var projectImagesArrayINCOM = ["Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg","Images/services/GRANDMALL.jpg"];
-var projectImagesArrayNETW = ["Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg","Images/services/livein.jpg","Images/services/EasyBuy.jpg","Images/services/EasyBuy.jpg"];
+var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
+var projectImagesArrayAll = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
+var projectImagesArrayINCOM = ["Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg"];
+var projectImagesArrayNETW = ["Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg"];
 
 $(document).ready(function(){
 	count =1;		
@@ -125,11 +125,11 @@ function hapyClientMotion(){
 $(window).scroll(function(){
 if($(window).scrollTop() > 200 && $(window).scrollTop() <400 )
 {
-	$(".contentarea").animate({marginTop : "5px"},1000);
+	//$(".contentarea").animate({marginTop : "5px"},1000);
 }
 else if($(window).scrollTop() > 600 && $(window).scrollTop() <800)
 {
-	$("#lady").animate({marginLeft : "90px"},1000);
+	//$("#lady").animate({marginLeft : "90px"},1000);
 }
 });
 
