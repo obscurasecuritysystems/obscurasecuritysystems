@@ -1,8 +1,8 @@
 // JavaScript Document
 var count = 1;
 var fromOtherPageToPrjct = 0;
-var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
-var projectImagesArrayAll = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
+var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/Koot.jpg","Images/services/Resi.jpg"];
+var projectImagesArrayAll = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/Koot.jpg","Images/services/Resi.jpg"];
 var projectImagesArrayINCOM = ["Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg"];
 var projectImagesArrayNETW = ["Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg"];
 
