@@ -1,5 +1,6 @@
 // JavaScript Document
 var count = 1;
+var fromOtherPageToPrjct = 0;
 var projectImagesArrayCCTV = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
 var projectImagesArrayAll = ["Images/services/EasyBuycopy.jpg","Images/services/GRANDMALL.jpg","Images/services/livein.jpg","Images/services/grandbakers.jpg","Images/services/EasyBuycopy.jpg","Images/services/Resi.jpg"];
 var projectImagesArrayINCOM = ["Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg","Images/services/AddNew.jpg"];
@@ -52,6 +53,7 @@ $(document).ready(function(){
             loop:false
         }
     }
+	
 })
 	
 $(".owl-item").mouseover(function(){
@@ -85,19 +87,6 @@ if($(".serviceDivHover").length > 0)
 $(".owl-stage").css("width","100%");
 $(".owl-item").css("width","100%");
 }
-var clickCountS = 0;
-$(window).click(function(){
-clickCountS = clickCountS +1;
-WriteFiles();
-if(clickCountS % 2!=0)
-{
-$(".test").find("img").attr("src","Images/services/table-lamp-no-overhead-light.jpeg");				 
-}
-else
-{
-	$(".test").find("img").attr("src","Images/services/table-lamp-no-onolight.jpeg");
-}
-});
 
 $(".down").click(function(){
 clickCount = clickCount + 1;
@@ -111,6 +100,42 @@ else
 }
 $(".serviceNext").slideToggle(800);	
 });
+
+
+$(".obscuraquote").fadeIn(2000);
+
+
+
+// Select all links with hashes
+$(".projectsmenu").click(function(event) {
+    // On-page links	
+    
+      // Figure out element to scroll to
+      var target = $("#our_projects");
+      //target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      
+    }
+  });
+
+//ready end
 
 
 });
@@ -195,29 +220,27 @@ function selectedProjects(projectType)
 		
 	}
 }
-
-function WriteToFile() {
-	alert("test");
-	switch (document.location.hostname)
-	{
-        case 'asite.com':
-                          var rootFolder = '/devbuild/'; break;
-        case 'localhost' :
-                          var rootFolder = '/mytestSiteA/'; break;
-        default :  // set whatever you want
-	}
-	alert(rootFolder);
-	const fs = require('fs');
-    fs.writeFile("../Images/test.txt", "hello test");
-    //set fso = CreateObject("Scripting.FileSystemObject");  
-    //set s = fso.CreateTextFile("D:\test.txt", True);
-    //s.writeline("HI");
-    //s.writeline("Bye");
-    //s.writeline("-----------------------------");
-    //s.Close();
- }
- 
-function WriteFiles()
+var url="https://script.google.com/macros/s/AKfycbyEUfcpqES-c5D0gu8HY9GvkvZGyq3K0VYxsRWjmlI1bCX3QzQ/exec";
+function sendEmailToUser()
 {
+	var callbackURL = url + "?callback=mailCallback";
+	alert(callbackURL);
+	var request = $.ajax({
+	crossDomain:true,
+	url: callbackURL,
+	method: "GET",
+	dataType: "jsonp"
+	});
+	
+}
 
+function mailCallback(e)
+{
+	alert("Successfuly send mail");
+}
+function fnNavigatetoProjects()
+{
+	alert('hi');
+	$("body").animate( 
+                { scrollTop: "100" }, 3000); 
 }

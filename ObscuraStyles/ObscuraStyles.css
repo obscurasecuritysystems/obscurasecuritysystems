@@ -5,6 +5,7 @@
 font-family:'Poppins', sans-serif;
 font-size:14px;
 font-weight:400;
+background-color:rgb(247, 247, 247);
 }
 .backgroundcolor
 {
@@ -25,7 +26,7 @@ padding:0;
 margin-left:-10px;
 margin-right:0px;
 margin-top:-10px;
-background-image:url(../Images/Carosals/wp2444553-cctv-wallpapers.jpg);
+background-image:url(../Images/Carosals/CCTVTable.jpg);
 background-repeat:no-repeat;
 }
 /*width and height*/
@@ -166,6 +167,15 @@ min-height:600px;
 padding-top:60px;
 background: rgba(0, 0, 0, 0.43);
 }
+.servicesOverlay
+{
+width:100%;
+position:absolute;
+min-height:600px;
+padding-top:60px;
+background: rgba(0, 0, 0, 0.43);
+}
+
 .pbttom20
 {
 padding-bottom:20px;
@@ -392,8 +402,8 @@ padding-top:30px;
 position:absolute;
 margin-top:-40px;
 margin-left:50%;	
-width:80px;
-height:80px;
+width:60px;
+height:60px;
 border-radius:50%;
 }
 .colorFontBlack
@@ -829,17 +839,30 @@ padding:0;
 margin-left:-10px;
 margin-right:0px;
 margin-top:-10px;
-background-image:url(../Images/RawImages/wp2444485-cctv-wallpapers.jpg);
+background-image:url(../Images/RawImages/WallP.png);
 background-repeat:no-repeat;
 }
-
+.categories:hover
+{
+text-decoration:none;
+}
 .carosalImageServices
 {
 padding:0;
 margin-left:-10px;
 margin-right:0px;
 margin-top:-10px;
-background-image:url(../Images/RawImages/WallP.png);
+background-image:url(../Images/Carosals/CCTVblue.jpg);
+background-repeat:no-repeat;
+}
+
+.carosalImageGallery
+{
+padding:0;
+margin-left:-10px;
+margin-right:0px;
+margin-top:-10px;
+background-image:url(../Images/Carosals/CIndex.jpg);
 background-repeat:no-repeat;
 }
 <!--Loader-->
@@ -915,7 +938,7 @@ background-repeat:no-repeat;
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 	
-	.carosalImageGallery
+	.carosalImageGallerys
 	{
 	background-image:url(../Images/services/table-lamp-no-onolight.jpeg);
 	background-repeat:no-repeat;
@@ -932,3 +955,102 @@ background-repeat:no-repeat;
 	border-bottom:3px;
 	border-bottom-color:#FF0000;
 	}
+	
+	/*UI Social Medias*/
+	
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+	background-color:#125688;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network  a {
+ background-color: #716D6D;   
+}
+.links:hover
+{
+text-decoration:none;
+}
+html {
+  scroll-behavior: smooth;
+}
