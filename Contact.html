@@ -15,7 +15,19 @@
 			<script src="Javscripts/owl.carousel.js" ></script>
              <script src="Javscripts/owl.animate.js" ></script>
               <script src="Javscripts/owl.navigation.js" ></script>
-             
+             <script type="text/javascript">
+			 var submitted = false;
+			 function success(){
+			 if(submitted){
+			 $('#successMessage').fadeIn(1000);
+			 $("#Name").val("");
+			 $("#Email").val("");
+			 $("#Phone").val("");
+			 $("#HomeTown").val("");
+			 $("#Message").val("");
+			 }
+			 }
+			 </script>
         <!--css style referrence-->
         <link rel="stylesheet" type="text/css" href="ObscuraStyles/ObscuraStyles.css">
          <link rel="stylesheet" type="text/css" href="ObscuraStyles/animate.css">
@@ -265,44 +277,48 @@ XIII/345, St.George Jacobit Syrian Church building,
             
         </div>
    </div>     
+   <iframe name="enquiryFrame" id="enquiryFrame" onload="success()" style="display:none;"></iframe>
     	<div class="row contentColor pb-1">
         	<div class="col-lg-6 col-md-6 col-sm-12">
             	<div class="ContactUs mt-5 backgroundcolor pt-5 pl-3 pr-3 pb-5">
                        		 <h4 class="firstWord fLeft ml-3">Contact</h4><h4 class="secondWord">&nbsp; Us</h4>
                              <div class="ContactUs mt-5">
-                        	<form  method="POST" action="https://script.google.com/macros/s/AKfycbzsHDLudu5SqIWg31jzvRAmwyZi2XSAOhcmwgSih-dOLv4ACN2m/exec" id="contactForm" name="contactForm" class="contactForm">
+                             <div id="successMessage" class="pl-3 pb-1" style="display:none;" >
+                             <label style="font-size:16px; color:#339933;">Thank you for keeping touch with us!</label> 
+                             </div>
+                        	<form  method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxavy2Wcqs1qLDu1rBnpjgzCs_WiY3j5XIl6SuZ5V0tQeKDw/formResponse" id="contactForm" name="contactForm" class="contactForm" target="enquiryFrame" onsubmit="submitted = true">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
 														<label class="fontColor pTop10" for="name">Full Name</label>
-														<input type="text" class="form-control" name="Name" id="Name" placeholder="Your Name" required>
+														<input type="text" class="form-control" name="entry.1981775251" id="Name" placeholder="Your Name" required>
 													</div>
 												</div>
 												<div class="col-md-6"> 
 													<div class="form-group">
 														<label class="fontColor pTop10" for="email">Email Address</label>
-														<input type="email" class="form-control" name="Email" id="Email" placeholder="Email" required>
+														<input type="email" class="form-control" name="entry.347479626" id="Email" placeholder="Email" required>
 													</div>
 												</div>
                                                 
                                                 <div class="col-md-6"> 
 													<div class="form-group">
 														<label class="fontColor pTop10" for="email">Phone Number</label>
-														<input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone Number" required>
+														<input type="text" class="form-control" name="entry.1842205826" id="Phone" placeholder="Phone Number" required>
 													</div>
 												</div>
                                                 
                                                 <div class="col-md-6"> 
 													<div class="form-group">
 														<label class="fontColor pTop10" for="email">HomeTown</label>
-														<input type="text" class="form-control" name="HomeTown" id="HomeTown" placeholder="Your HomeTown" required>
+														<input type="text" class="form-control" name="entry.2080602585" id="HomeTown" placeholder="Your HomeTown" required>
 													</div>
 												</div>
                                                 
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="fontColor pTop10" for="#">Message</label>
-														<textarea name="Message" class="form-control" id="Message" cols="30" rows="4" placeholder="Message"></textarea>
+														<textarea name="entry.1306669486" class="form-control" id="Message" cols="30" rows="4" placeholder="Message"></textarea>
 													</div>
 												</div>
 												<div class="col-md-12">
